@@ -1,0 +1,1 @@
+Lucrari de laborator pentru materia de anul 3 semestrul 1 Algoritmi Paraleli si Distribuiti
