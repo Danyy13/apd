@@ -1,0 +1,19 @@
+Serial: Wall Clock time for n=1000000 is 0.0035392000
+Parallel: Wall Clock time for n=1000000 is 0.0026784000
+Measured Speedup=1.321386
+
+Serial: Wall Clock time for n=2500000 is 0.0080380000
+Parallel: Wall Clock time for n=2500000 is 0.0029649000
+Measured Speedup=2.711053
+
+Serial: Wall Clock time for n=5000000 is 0.0146008000
+Parallel: Wall Clock time for n=5000000 is 0.0052051000
+Measured Speedup=2.805095
+
+Serial: Wall Clock time for n=7500000 is 0.0217924000
+Parallel: Wall Clock time for n=7500000 is 0.0091248000
+Measured Speedup=2.388261
+
+Serial: Wall Clock time for n=10000000 is 0.0349524000
+Parallel: Wall Clock time for n=10000000 is 0.0144025000
+Measured Speedup=2.426829
