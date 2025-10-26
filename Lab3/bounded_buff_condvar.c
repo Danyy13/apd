@@ -1,12 +1,11 @@
 /*
 File bounded_buff_condvar.c
-Bounded buffer -  a Circular array of fixed size
+Bounded buffer - a Circular array of fixed size
 is used as a Queue between a number of Producers and Consumers.
 Version: with locks and condition variables
 */
 #include <stdio.h>
 #include <pthread.h>
-
 
 #define REPEAT 5    /* each thread is doing REPEAT operations  */
 #define NUM_THREADS 4
