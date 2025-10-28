@@ -1,0 +1,19 @@
+8  -  0.008143
+16 -  0.005858
+24 -  0.004276
+32 -  0.004345
+40 -  0.004265
+48 -  0.003410
+56 -  0.003318
+64 -  0.003054
+72 -  0.002962
+80 -  0.002703
+88 -  0.002534
+96 -  0.002763
+104 - 0.002787
+112 - 0.002628
+120 - 0.002648
+
+Padding size pare sa fie de 64 bytes deoarece de la valoarea
+64, timpul pare sa nu mai scada atat de tare. Liniile de cache
+nu mai au valorile array-ului "suprapuse"

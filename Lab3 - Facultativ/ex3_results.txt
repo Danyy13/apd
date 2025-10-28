@@ -1,0 +1,16 @@
+Datele masurate: https://docs.google.com/spreadsheets/d/1Piy2ymP3r8tvKsKUXq7nNKgE37njul7pwedjk7UIUGs/edit?usp=sharing
+
+1. M = N = 8000
+Exemplu general, speedup-ul creste normal
+
+2. M = 8, N = 8000000
+Datorita faptului ca sunt doar 8 randuri, overhead-ul de creare de thread-uri
+depaseste munca facuta de fiecare thread. Fiecare thread este creat pentru a
+face putine task-uri lungi (ar fi mai eficient mai multe task-uri medii sau
+scurte la fel ca in primul exemplu)
+
+La S2 timpul este foarte inconsistent de la o rulare la alta, putand sa am
+speedup intre 0.66 si 1.28
+
+3. M = 8000000, N = 8
+Speedup-ul creste insa pare sa fie mai incet decat la exemplul 1
