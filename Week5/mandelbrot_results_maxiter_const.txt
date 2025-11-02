@@ -1,0 +1,38 @@
+https://docs.google.com/spreadsheets/d/1RprQdSrvNU71AL8OfoRkSsW-jLzdjLeE3XtAyCYqG_w/edit?usp=sharing
+
+Se observa ca speedup-ul se pastreaza la oricare dintre versiuni.
+Probabil ca este nevoie de un numar mult mai mare de puncte pentru a observa vreo
+diferenta notabila.
+In principiu, o schedula statica si cu un numar mai mare de chunk-uri ar fi cea mai
+eficienta optiune aici, pentru ca workload-ul nu difera asa de tare ca la un MAXITER
+foarte mare, si overhead-ul este redus datorita bucatilor mai mari care se computeaza
+una dupa alta la un moment.
+
+for MAXITER = 1000
+NPOINTS = 1600
+Serial:                                 area=1.512303   error=0.000945  time=4.014000
+Parallel static with chunksize = 1:     area=1.512303   error=0.000945  time=0.307000
+Parallel static with chunksize = 20:    area=1.512303   error=0.000945  time=0.339000
+Parallel dynamic with chunksize = 1:    area=1.512303   error=0.000945  time=0.299000
+Parallel dynamic with chunksize = 20:   area=1.512303   error=0.000945  time=0.328000
+
+NPOINTS = 3200
+Serial:                                 area=1.511321   error=0.000472  time=15.955000
+Parallel static with chunksize = 1:     area=1.511321   error=0.000472  time=1.260000
+Parallel static with chunksize = 20:    area=1.511321   error=0.000472  time=1.232000
+Parallel dynamic with chunksize = 1:    area=1.511321   error=0.000472  time=1.177000
+Parallel dynamic with chunksize = 20:   area=1.511321   error=0.000472  time=1.224000
+
+NPOINTS = 6400
+Serial:                                 area=1.510787   error=0.000236  time=64.005000
+Parallel static with chunksize = 1:     area=1.510787   error=0.000236  time=4.735000
+Parallel static with chunksize = 20:    area=1.510787   error=0.000236  time=4.801000
+Parallel dynamic with chunksize = 1:    area=1.510787   error=0.000236  time=4.829000
+Parallel dynamic with chunksize = 20:   area=1.510787   error=0.000236  time=4.890000
+
+NPOINTS = 12800
+Serial:                                 area=1.510556   error=0.000118  time=255.566000
+Parallel static with chunksize = 1:     area=1.510556   error=0.000118  time=19.334000
+Parallel static with chunksize = 20:    area=1.510556   error=0.000118  time=20.962000
+Parallel dynamic with chunksize = 1:    area=1.510556   error=0.000118  time=19.493000
+Parallel dynamic with chunksize = 20:   area=1.510556   error=0.000118  time=19.612000
