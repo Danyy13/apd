@@ -1,0 +1,26 @@
+For 8 threads (number of cores)
+
+N = 10000
+Elapsed time Serial Countsort v1 = 0.2290 seconds
+Elapsed time Parallel Countsort v1 = 0.0440 seconds
+Speedup = 5.20
+
+N = 25000
+Elapsed time Serial Countsort v1 = 1.5840 seconds
+Elapsed time Parallel Countsort v1 = 0.2470 seconds
+Speedup = 6.41
+
+N = 50000
+Elapsed time Serial Countsort v1 = 6.5250 seconds
+Elapsed time Parallel Countsort v1 = 0.9720 seconds
+Speedup = 6.71
+
+N = 75000
+Elapsed time Serial Countsort v1 = 14.8480 seconds
+Elapsed time Parallel Countsort v1 = 2.2080 seconds
+Speedup = 6.72
+
+N = 100000
+Elapsed time Serial Countsort v1 = 26.7900 seconds
+Elapsed time Parallel Countsort v1 = 5.2280 seconds
+Speedup = 5.12
